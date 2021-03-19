@@ -10,11 +10,16 @@
 
     /*====== Colors ======*/
 
-    --Cyan: hsl(193, 100%, 96%);
+    --color-hero: hsl(193, 100%, 96%);
     --color-footer-bg: hsl(192, 100%, 9%);
     --color-body-text: hsl(208, 11%, 55%);
     --color-button: hsl(322, 100%, 66%);
     --color-bg: rgb(255, 255, 255);
+    --color-dark: rgb(0, 0, 0);
+
+
+    /*====== Shadow ======*/
+    --shadow-button: 0px 0px 8px rgba(53, 53, 53, 0.219);
 
 }
 
@@ -33,17 +38,131 @@ html {
 
 body {
     color: var(--color-body-text);
-    background-color: var(--color-bg);
+    /* background-color: var(--color-bg); */
     font-family: var(--font-main);
     font-size: 1rem;
     line-height: 1.3rem;
+    max-width: 1440px;
 }
-
+a {
+    text-decoration: none;
+    font-size: 0.75rem;
+    line-height: 0.75rem;
+    font-weight: var(--weight-semi-bold);
+}
 img {
     display: block;
     width: 100%;
     height: auto;
 }
+
+h1, h2 {
+    font-weight: var(--weight-bold);
+    color:var(--color-dark);
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+h1 {
+    margin-bottom: 25px;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.3rem;
+}
+/* ======= Header ======= */
+
+header {
+    max-width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+}
+.logo {
+    flex: 1;
+    font-size: 1rem;
+}
+.logo img {
+    width: auto;
+    height: 18px;
+}
+.header__button a {
+    background-color: var(--color-bg);
+    padding: 5px 20px;
+    border-radius: 50px;
+    color: var(--color-dark);
+    box-shadow: var(--shadow-button);
+    
+}
+
+
+/* ======= Hero Section ======= */
+
+.hero {
+    min-height: 100px;
+    max-width: 100%;
+    padding: 0px 20px;
+    /* background: #000; */
+}
+
+.two__columns {
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background: rgb(117, 101, 101); */
+}
+
+.two__columns > * {
+    min-height: 100px;
+}
+
+.hero__content {
+    /* background-color: red; */
+    text-align: center;
+
+}
+.hero__content p {
+    padding: 0px 10px;
+    margin-bottom: 35px;
+}
+.hero__content__wrapper {
+    margin: 80px 0px;
+    /* background-color: yellowgreen; */
+}
+
+.button {
+    color: var(--color-bg);
+    background-color: var(--color-button);
+    padding: 12px 70px;
+    border-radius: 50px;
+}
+
+.hero__image__bg {
+    background-color: var(--color-hero);
+    background-image: url(images/bg-hero-mobile.svg);
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    /* background-position: center; */
+
+}
+
+
+
+
+.card__container {
+    background-color: red;
+    margin: 50px 20px;
+}
+
+.card1 {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
 
 
 
