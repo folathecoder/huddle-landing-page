@@ -27,7 +27,6 @@ The designs were created to the following widths:
 
 ### Headings
 
-- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
 - Weights: 600
 
 ### Body, Call-to-actions

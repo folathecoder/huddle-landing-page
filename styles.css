@@ -1,0 +1,65 @@
+:root {
+
+    /*====== Font Family ======*/
+    --font-main: 'Open Sans', sans-serif;
+
+    /*====== Font Weights ======*/
+    --weight-bold: 700;
+    --weight-semi-bold: 600;
+    --weight-regular: 400;
+
+    /*====== Colors ======*/
+
+    --Cyan: hsl(193, 100%, 96%);
+    --color-footer-bg: hsl(192, 100%, 9%);
+    --color-body-text: hsl(208, 11%, 55%);
+    --color-button: hsl(322, 100%, 66%);
+    --color-bg: rgb(255, 255, 255);
+
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: var(--color-body-text);
+    background-color: var(--color-bg);
+    font-family: var(--font-main);
+    font-size: 1rem;
+    line-height: 1.3rem;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
