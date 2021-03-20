@@ -47,14 +47,24 @@ body {
 }
 a {
     text-decoration: none;
-    font-size: 0.75rem;
-    line-height: 0.75rem;
+    font-size: 0.9rem;
+    line-height: 2.2rem;
     font-weight: var(--weight-semi-bold);
+    color: var(--color-bg);
 }
 img {
     display: block;
     width: 100%;
     height: auto;
+}
+
+ul, li {
+    list-style: none;
+    color: var(--color-body-text);
+}
+
+i {
+    font-size: 2rem;
 }
 
 h1, h2 {
@@ -98,6 +108,8 @@ header {
     height: 18px;
 }
 .header__button a {
+    font-size: 0.75rem;
+    line-height: 0.75rem;
     background-color: var(--color-bg);
     padding: 5px 20px;
     border-radius: 50px;
@@ -143,6 +155,8 @@ header {
 }
 
 .button {
+    font-size: 0.75rem;
+    line-height: 0.75rem;
     color: var(--color-bg);
     background-color: var(--color-button);
     padding: 12px 70px;
@@ -196,8 +210,7 @@ header {
 
 
 .signup__container{
-    background-color: yellowgreen;
-    min-height: 500px;
+    min-height: 80px;
 }
 
 .signup__box {
@@ -208,6 +221,7 @@ header {
     border-radius: 20px;
     box-shadow: var(--shadow-button);
     margin: 0px 10px;
+    transform: translateY(100px);
 }
 
 .signup__box h2 {
@@ -215,11 +229,84 @@ header {
 }
 
 
+/* ====== Footer ====== */
 
+footer {
+    background-color: var(--color-footer-bg);
+}
 
+.footer__logo {
+    min-height: 20px;
+    padding: 180px 20px 20px 20px;
+    /* background: #000; */
+}
 
+.footer__logo img{
+    width: 200px
+}
 
+.footer__sections {
+    display: flex;
+    flex-direction: column;
+} 
 
+.footer__sections > * {
+    min-height: 50px;
+    flex: 1;
+    padding: 20px 20px;
+} 
+
+.footer__area img {
+    width: 17px;
+    height: auto;
+    background-color: yellowgreen;
+}
+
+.footer__content {
+    display: flex;
+    flex-direction: column;
+}
+.footer__content p {
+    margin-bottom: 20px;
+}
+.footer__content span {
+    display: inline-block;
+    margin-right: 20px;
+
+}
+.red {
+    background-color: red;
+}
+.yellow {
+    background-color: yellow;
+}
+/* .orange {
+    background-color: orange;
+} */
+.footer__padding-top {
+    padding: 0px 20px 20px 20px;
+}
+.footer__padding-bottom {
+    padding: 20px 20px 0px 20px;
+}
+.social__icons ul {
+    text-align: center;
+}
+.social__icons li {
+    display: inline-block;
+}
+
+.social__icons li:nth-of-type(2){
+    margin: 0px 15px;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.copyright p {
+    font-size: 0.75rem;
+}
 
 
 
